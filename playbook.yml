@@ -10,12 +10,12 @@
 
     - name: Re-create a Spring container
       docker_container:
-        name: ecommerce
-        image: yamiannephilim/ecommerce
+        name: portugal-hotel-booking
+        image: yamiannephilim/portugal-hotel-booking
         networks:
           - name: yan
             aliases:
-              - e-commerce
+              - portugal-hotel-booking-dash
         state: started
         recreate: yes
         exposed_ports:
