@@ -11,7 +11,7 @@
     - name: Re-create a Spring container
       docker_container:
         name: portugal-hotel-booking
-        image: yamiannephilim/portugal-hotel-booking
+        image: yamiannephilim/dash
         networks:
           - name: yan
             aliases:
