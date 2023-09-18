@@ -15,7 +15,7 @@
         networks:
           - name: yan
             aliases:
-              - portugal-hotel-booking-dash
+              - portugal-hotel-booking
         state: started
         recreate: yes
         exposed_ports:
