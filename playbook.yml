@@ -8,14 +8,14 @@
       docker_network:
         name: yan
 
-    - name: Re-create a Spring container
+    - name: Re-create a container
       docker_container:
         name: portugal-hotel-booking
         image: yamiannephilim/dash
         networks:
           - name: yan
             aliases:
-              - portugal-hotel-booking
+              - portugal-hotel-booking-dash
         state: started
         recreate: yes
         exposed_ports:
